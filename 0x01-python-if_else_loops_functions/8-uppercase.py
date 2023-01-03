@@ -2,8 +2,6 @@
 def uppercase(str):
     """Prints given string in uppercase"""
     length = len(str)
-    if length == 0:
-        raise ValueError("1")
     for i in range(length):
         c = ord(str[i])
         if 97 <= c <= 122:
