@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 def uppercase(str):
     """Prints given string in uppercase"""
-    if str == "":
-        return
     length = len(str)
+    if length == 0:
+        exit(1)
     for i in range(length):
         c = ord(str[i])
         if 97 <= c <= 122:
