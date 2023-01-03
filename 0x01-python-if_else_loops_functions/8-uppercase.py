@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 def uppercase(str):
     """Prints given string in uppercase"""
+    if str == "":
+        return
     length = len(str)
     for i in range(length):
         c = ord(str[i])
