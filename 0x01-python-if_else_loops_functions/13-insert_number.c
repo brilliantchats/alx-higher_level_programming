@@ -2,6 +2,19 @@
 #include <stdlib.h>
 #include "lists.h"
 /**
+ * empty_list - Handles an empty list
+ * @node: the new node to be added
+ * @num: the integer
+ *
+ * Return: the address of the new node
+ */
+listint_t *empty_list(listint_t *node, int num)
+{
+	node->n = num;
+	node->next = next;
+	return (node);
+}
+/**
  * insert_node - Inserts a node into a sorted list
  * @head: the head of the linked list
  * @number: the integer value of the new node to be inserted
@@ -15,7 +28,7 @@ listint_t *insert_node(listint_t **head, int number)
 	int inserted = 0;
 
 	if (*head == NULL)
-		return (NULL);
+		return (empty_list(new, number))
 	new = malloc(sizeof(listint_t));
 	if (new == NULL)
 		return (NULL);
