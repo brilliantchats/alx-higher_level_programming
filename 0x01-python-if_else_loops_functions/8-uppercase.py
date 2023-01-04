@@ -2,13 +2,14 @@
 def uppercase(str):
     """Prints given string in uppercase"""
     length = len(str)
-    if (length == 0):
-        return ""
-    for i in range(length):
-        c = ord(str[i])
-        if 97 <= c <= 122:
-            c = c - 32
-        if i != length - 1:
-            print("{}".format(chr(c)), end="")
-        else:
-            print("{}".format(chr(c)))
+    str_list = []
+    if length:
+        for i in range(length):
+            c = ord(str[i])
+            if 97 <= c <= 122:
+                str_list.append(chr(c - 32))
+            else:
+                str_list.append(chr(c))
+        print("{}".format(''.join(str_list)))
+    else:
+        print("{}".format(''))
