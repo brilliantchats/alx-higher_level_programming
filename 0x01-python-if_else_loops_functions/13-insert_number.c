@@ -11,7 +11,7 @@
 listint_t *empty_list(listint_t *node, int num)
 {
 	node->n = num;
-	node->next = next;
+	node->next = NULL;
 	return (node);
 }
 /**
@@ -27,9 +27,9 @@ listint_t *insert_node(listint_t **head, int number)
 	listint_t *previous = *head, *new;
 	int inserted = 0;
 
-	if (*head == NULL)
-		return (empty_list(new, number))
 	new = malloc(sizeof(listint_t));
+	if (*head == NULL)
+		return (empty_list(new, number));
 	if (new == NULL)
 		return (NULL);
 	new->n = number;
