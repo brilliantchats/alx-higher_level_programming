@@ -28,10 +28,10 @@ listint_t *insert_node(listint_t **head, int number)
 	int inserted = 0;
 
 	new = malloc(sizeof(listint_t));
-	if (*head == NULL)
-		return (empty_list(new, number));
 	if (new == NULL)
 		return (NULL);
+	if (*head == NULL)
+		return (empty_list(new, number));
 	new->n = number;
 	while (current != NULL)
 	{
