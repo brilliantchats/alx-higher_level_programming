@@ -7,5 +7,6 @@ def main():
 
     print("{0:d} + {1:d} = {2:d}".format(a, b, add(1, 2)))
 
+
 if __name__ == "__main__":
     main()
