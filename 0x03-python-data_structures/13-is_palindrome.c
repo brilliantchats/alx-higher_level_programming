@@ -21,8 +21,6 @@ int is_palindrome(listint_t **head)
 		current = current->next;
 	}
 	current = *head;
-	if (length == 1)
-		return (0);
 	new_list = malloc(sizeof(int) * length);
 	for (i = 0; i < length; i++)
 	{
