@@ -3,10 +3,10 @@ def roman_to_int(roman_string):
     """converts a Roman numeral to an integer"""
     roman_num = {'I': 1, 'V': 5, 'X': 10, 'L': 50,
                  'C': 100, 'D': 500, 'M': 1000}
+    if type(roman_string) is not str or roman_string is None:
+        return 0
     length = len(roman_string)
     total = 0
-    if len == 1:
-        return total + roman_num.get(roman_string)
     i = 0
     while i < length:
         if roman_string[i] == 'I':
