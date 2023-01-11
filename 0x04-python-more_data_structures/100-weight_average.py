@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 def weight_average(my_list=[]):
     """returns the weighted average of all integers tuple"""
-    if my_list == {}:
+    if my_list == {} or type(my_list) is not list:
         return 0
     prod_total = 0
     average = 0
