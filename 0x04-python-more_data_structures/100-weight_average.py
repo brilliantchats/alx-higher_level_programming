@@ -8,4 +8,6 @@ def weight_average(my_list=[]):
     for tupl in my_list:
         prod_total += (tupl[0] * tupl[1])
         average += tupl[1]
+    if average == 0:
+        return 0
     return prod_total / average
