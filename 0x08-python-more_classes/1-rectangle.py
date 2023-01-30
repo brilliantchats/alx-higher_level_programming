@@ -15,12 +15,14 @@ class Rectangle():
             width: the smaller of the two sides
             height: the larger of the two sides
         """
-        self.__height = height
-        self.__width = width
+        self.height = height
+        self.width = width
 
     @property
     def height(self):
-        """Get the height of the rectangle"""
+        """
+        Get the height of the rectangle
+        """
         return self.__height
 
     @height.setter
