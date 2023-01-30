@@ -123,4 +123,4 @@ class Rectangle():
         A class method that returns a new instance of Rectangle but
         as a square
         """
-        return Rectangle(size, size)
+        return cls(size, size)
