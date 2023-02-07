@@ -27,6 +27,8 @@ class Student():
         if attrs:
             data = {}
             for attr in attrs:
+                if type(attr) is not str:
+                    return self.__dict__
                 if attr in self.__dict__.keys():
                     data[attr] = self.__dict__[attr]
             return data
