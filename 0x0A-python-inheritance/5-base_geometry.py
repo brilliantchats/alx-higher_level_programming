@@ -4,7 +4,7 @@ An Empty class
 """
 
 
-class Geometry():
+class BaseGeometry():
     """
     An Empty class definition
     """
