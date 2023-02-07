@@ -31,6 +31,7 @@ class Student():
                     return self.__dict__
                 if attr in self.__dict__.keys():
                     data[attr] = self.__dict__[attr]
-            return data
+            if data:
+                return data
         else:
             return self.__dict__
