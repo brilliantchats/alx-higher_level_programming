@@ -25,7 +25,7 @@ class Student():
         retrieves a dictionary representation of a Student instance
         """
         if attrs:
-            data = {}
+            data = dict()
             for attr in attrs:
                 if type(attr) is not str:
                     return self.__dict__
