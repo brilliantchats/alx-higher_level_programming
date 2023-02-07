@@ -17,7 +17,8 @@ def add_to_file():
         for i in range(1, len(sys.argv)):
             data.append(sys.argv[i])
         save_to_json_file(data, filename)
-    except Exception:
+    except FileNotFoundError:
         save_to_json_file([], filename)
+
 
 add_to_file()
