@@ -26,4 +26,3 @@ def pascal_triangle(n):
             prev = temp
             triangle.append(temp)
     return triangle
-
