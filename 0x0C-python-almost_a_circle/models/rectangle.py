@@ -86,3 +86,19 @@ class Rectangle(Base):
                 raise ValueError("y must be >= 0")
         else:
             raise TypeError("y must be an integer")
+
+    def area(self):
+        """Returns the area of a rectangle"""
+        return self.width * self.height
+
+    def display(self):
+        """Prints the area using '#' symbol"""
+        for i in range(self.width):
+            for j in range(self.height):
+                print("#", end="")
+            print()
+
+    def __str__(self):
+        """Overriding the inbuilt str method"""
+        return "[Rectangle] ({}) {}/{} - {}/{}".format(
+                self.id, self.x, self.y, self.width, self.height)
