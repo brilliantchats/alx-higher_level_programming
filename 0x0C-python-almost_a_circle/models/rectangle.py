@@ -93,8 +93,8 @@ class Rectangle(Base):
 
     def display(self):
         """Prints the area using '#' symbol"""
-        for i in range(self.width):
-            for j in range(self.height):
+        for i in range(self.height):
+            for j in range(self.width):
                 print("#", end="")
             print()
 
